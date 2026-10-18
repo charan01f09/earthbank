@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f1e5" />
+  <meta name="description" content="An interactive field guide to Earth's biocapacity, ecological, carbon and water footprints, and the chemistry of our planet." />
+  <title>Earth's Bank Account: Biocapacity, Footprints &amp; the Chemistry of Our Planet</title>
+  <link rel="icon" href="/assets/images/earth-mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+  <script type="module" src="/assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Earth's Bank Account, home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14"/><path d="M5 20h30M20 5c5 5 7 10 7 15s-2 10-7 15M20 5c-5 5-7 10-7 15s2 10 7 15"/><path d="M6 25h12m4-10h12"/></svg></span>
+      <span class="brand-name">Earth’s <em>account</em></span>
+    </a>
+    <nav class="chapter-nav" aria-label="Main navigation">
+      <a href="#problem">The balance</a><a href="#footprints">Footprints</a><a href="#cycles">Chemistry</a><a href="#simulator">Simulator</a><a href="#quiz">Quiz</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-toggle__sun" aria-hidden="true">◐</span><span class="theme-toggle__label">Dark mode</span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A field guide to our shared account</p>
+        <h1 id="hero-title">What if the Earth had a <em>bank account?</em></h1>
+        <p class="hero-intro">Every year, nature deposits what living systems can renew. Humanity is learning to spend that balance faster than it can grow back.</p>
+        <div class="hero-actions"><a class="button button--primary" href="#simulator">Check my footprint <span aria-hidden="true">↘</span></a><a class="text-link" href="#cycles">Learn the science <span aria-hidden="true">→</span></a></div>
+        <div class="hero-stat"><span class="hero-stat__number" data-counter="1.7" data-decimals="1">1.7</span><span class="hero-stat__unit">Earths</span><p>Humanity uses about <strong>1.7 Earths' worth of resources every year.</strong> <span class="micro-note">Approximate global estimate</span></p></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a living Earth resting on a ruled ledger" role="img">
+        <div class="hero-art__index">EARTH / 01</div>
+        <img src="/assets/images/earth-bank-hero.webp" alt="A forest-green Earth rendered like a coin resting on an open sand-colored ledger, encircled by a teal orbit." fetchpriority="high" />
+        <div class="hero-art__caption"><span>THE NATURAL ACCOUNT</span><span>EST. ONE PLANET</span></div>
+      </div>
+      <div class="account-strip" aria-label="Nature's income compared with humanity's spending">
+        <div class="account-strip__label"><span class="eyebrow">The balance, at a glance</span><p>Nature's annual income</p><strong>1.0 <small>Earth</small></strong></div>
+        <div class="account-bars"><div class="account-bar-row"><span>Biocapacity</span><div class="account-track"><span class="account-fill account-fill--income"></span></div></div><div class="account-bar-row"><span>Footprint</span><div class="account-track"><span class="account-fill account-fill--spending"></span></div></div><div class="account-overshoot"><span>↗</span> 0.7 Earths in ecological overdraft</div></div>
+        <div class="account-note"><span class="account-note__stamp">THE<br/>OVERDRAFT</span><p>Resource use outpaces renewal. The balance is carried forward as pressure on ecosystems.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--problem" id="problem" aria-labelledby="problem-title">
+      <div class="section-wrap chapter-grid">
+        <div class="chapter-rail"><span class="chapter-number">01</span><span class="chapter-rule"></span><span class="chapter-rail-label">THE PROBLEM</span></div>
+        <div class="chapter-main">
+          <div class="chapter-heading"><div><p class="eyebrow">The ecological overdraft</p><h2 id="problem-title">An account with a <em>living limit.</em></h2></div><p class="chapter-lede">A bank balance can be drawn down. So can the natural systems that supply food, materials and a stable climate.</p></div>
+          <div class="analogy-grid">
+            <article><span class="analogy-mark">01 / INCOME</span><h3>Biocapacity</h3><p>Nature's income: the ecosystems' capacity to regenerate resources and absorb some wastes over time.</p></article>
+            <article><span class="analogy-mark">02 / SPENDING</span><h3>Footprint</h3><p>Humanity's spending: the demand we place on biologically productive land and sea.</p></article>
+            <article><span class="analogy-mark analogy-mark--warning">03 / DEBT</span><h3>Deficit</h3><p>When spending exceeds renewal, the gap is an ecological debt paid through depleted stocks and stressed cycles.</p></article>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading"><div><span class="eyebrow">A rising curve · illustrative estimate</span><h3>The balance through time</h3></div><span class="tag tag--approx">Approximate data</span></div>
+            <p class="timeline-copy">The footprint crossed Earth's regenerative capacity in the early 1970s and has continued to rise. This simplified series shows the direction, not an annual accounting dataset.</p>
+            <div class="timeline-chart" aria-live="polite"><div class="timeline-chart__header"><span id="timeline-year">2026</span><span id="timeline-description">About 1.7 Earths of demand</span></div><div class="timeline-bars"><span class="timeline-bar timeline-bar--capacity" aria-hidden="true"></span><span class="timeline-bar timeline-bar--footprint" id="timeline-footprint" aria-hidden="true"></span><span class="timeline-limit" aria-hidden="true"><i>1.0 Earth · regenerative capacity</i></span></div><div class="timeline-legend"><span><i class="swatch swatch--footprint"></i>Human footprint</span><span><i class="swatch swatch--capacity"></i>Earth's biocapacity</span></div></div>
+            <label class="range-label" for="timeline-slider"><span>Choose a year</span><output id="timeline-slider-output" for="timeline-slider">2026</output></label><input class="range-input" id="timeline-slider" type="range" min="1970" max="2026" step="1" value="2026" aria-label="Select a year from 1970 to 2026 to compare human demand with biocapacity" />
+            <p class="overshoot-day"><span class="calendar-icon" aria-hidden="true">⌁</span><span><strong>Earth Overshoot Day</strong> — the date when humanity's annual demand exceeds what Earth can regenerate that year. In recent years it has fallen around late July.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--footprints" id="footprints" aria-labelledby="footprints-title">
+      <div class="section-wrap chapter-grid">
+        <div class="chapter-rail"><span class="chapter-number">02</span><span class="chapter-rule"></span><span class="chapter-rail-label">THREE LENSES</span></div>
+        <div class="chapter-main">
+          <div class="chapter-heading"><div><p class="eyebrow">Three ways to measure demand</p><h2 id="footprints-title">Different footprints. <em>One planet.</em></h2></div><p class="chapter-lede">Each lens traces a different pressure—from productive area to greenhouse gases to the water hidden in everyday life.</p></div>
+          <div class="footprint-cards">
+            <details class="footprint-card" open><summary><span class="card-index">01</span><span><span class="card-kicker">LAND + SEA</span><strong>Ecological<br/>Footprint</strong></span><span class="card-arrow" aria-hidden="true">↗</span></summary><div class="footprint-card__body"><p>The biologically productive land and sea needed for the food, fibre and housing we use, plus area to absorb some wastes.</p><div class="unit-note"><span>UNIT</span><strong>global hectares <abbr title="global hectares">gha</abbr></strong></div><div class="card-fact"><span class="fact-number">~1.5</span><span>gha/person is the approximate global biocapacity fair share used in this guide.</span></div></div></details>
+            <details class="footprint-card"><summary><span class="card-index">02</span><span><span class="card-kicker">AIR + HEAT</span><strong>Carbon<br/>Footprint</strong></span><span class="card-arrow" aria-hidden="true">↗</span></summary><div class="footprint-card__body"><p>The greenhouse gases linked to an activity—such as CO₂, CH₄ and N₂O—expressed together as carbon-dioxide equivalent.</p><div class="unit-note"><span>UNIT</span><strong>tons CO₂e / year</strong></div><p class="micro-note">The simulator also reports kg CO₂e/day, so daily choices are easier to compare.</p></div></details>
+            <details class="footprint-card"><summary><span class="card-index">03</span><span><span class="card-kicker">RAIN + RIVERS</span><strong>Water<br/>Footprint</strong></span><span class="card-arrow" aria-hidden="true">↗</span></summary><div class="footprint-card__body"><p>Green is rainwater in crops; blue is surface water and groundwater; grey is the water volume associated with diluting pollution.</p><div class="unit-note"><span>UNIT</span><strong>liters / day</strong></div><div class="water-key"><span><i class="swatch swatch--green"></i>Green</span><span><i class="swatch swatch--blue"></i>Blue</span><span><i class="swatch swatch--grey"></i>Grey</span></div></div></details>
+          </div>
+          <div class="regional-panel">
+            <div class="regional-panel__intro"><span class="eyebrow">A shared fair-share line</span><h3>Ecological Footprint, by region</h3><p>Approximate per-person footprints compared with the 1.5 gha guide value. Regional totals vary by year and accounting method.</p></div>
+            <div class="regional-panel__chart"><div id="world-comparison-chart" class="chart-host"></div><div id="world-comparison-values" class="chart-values" aria-label="Approximate values"></div></div>
+          </div>
+          <div class="virtual-water">
+            <div><span class="eyebrow">What a product carries</span><h3>Virtual water</h3><p>Water can be used far upstream, long before a product reaches your hands.</p></div>
+            <div class="water-reveals"><details><summary><span class="reveal-number">2,700 <small>L</small></span><span>One cotton T-shirt</span><span class="reveal-plus" aria-hidden="true">+</span></summary><p>An approximate supply-chain water estimate; actual values vary with growing and processing conditions.</p></details><details><summary><span class="reveal-number">15,000 <small>L</small></span><span>1 kg beef</span><span class="reveal-plus" aria-hidden="true">+</span></summary><p>A widely used global-average estimate that includes water along the production chain.</p></details><details><summary><span class="reveal-number">12,000 <small>L</small></span><span>One smartphone</span><span class="reveal-plus" aria-hidden="true">+</span></summary><p>An approximate indirect-water estimate for materials and manufacturing, not household water.</p></details></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--cycles" id="cycles" aria-labelledby="cycles-title">
+      <div class="section-wrap chapter-grid">
+        <div class="chapter-rail"><span class="chapter-number">03</span><span class="chapter-rule"></span><span class="chapter-rail-label">THE CHEMISTRY</span></div>
+        <div class="chapter-main">
+          <div class="chapter-heading"><div><p class="eyebrow">Matter cycles through the living world</p><h2 id="cycles-title">The chemistry of <em>our shared home.</em></h2></div><p class="chapter-lede">Carbon, nitrogen, phosphorus, sulfur and water move through connected reservoirs. Human activity can change how fast—and where—they flow.</p></div>
+          <div class="cycle-workbench">
+            <div class="cycle-tabs" role="tablist" aria-label="Choose a biogeochemical cycle"><button type="button" role="tab" id="tab-carbon" aria-controls="cycle-detail" aria-selected="true" data-cycle-tab="carbon">Carbon</button><button type="button" role="tab" id="tab-nitrogen" aria-controls="cycle-detail" aria-selected="false" data-cycle-tab="nitrogen" tabindex="-1">Nitrogen</button><button type="button" role="tab" id="tab-phosphorus" aria-controls="cycle-detail" aria-selected="false" data-cycle-tab="phosphorus" tabindex="-1">Phosphorus</button><button type="button" role="tab" id="tab-sulfur" aria-controls="cycle-detail" aria-selected="false" data-cycle-tab="sulfur" tabindex="-1">Sulfur</button><button type="button" role="tab" id="tab-water" aria-controls="cycle-detail" aria-selected="false" data-cycle-tab="water" tabindex="-1">Water</button></div>
+            <div id="cycle-detail" class="cycle-detail" role="tabpanel" aria-labelledby="tab-carbon"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--simulator" id="simulator" aria-labelledby="simulator-title">
+      <div class="section-wrap chapter-grid">
+        <div class="chapter-rail"><span class="chapter-number">04</span><span class="chapter-rule"></span><span class="chapter-rail-label">YOUR ACCOUNT</span></div>
+        <div class="chapter-main">
+          <div class="chapter-heading"><div><p class="eyebrow">A browser-only learning tool</p><h2 id="simulator-title">Eco-Footprint &amp; <em>Biocapacity Simulator</em></h2></div><p class="chapter-lede">Start with a typical day. Change one lever and watch the estimated account recalculate in real time.</p></div>
+          <p class="estimate-note"><span aria-hidden="true">ⓘ</span> Approximate educational estimates—not a personal audit or a substitute for a full footprint assessment.</p>
+          <div class="simulator-grid">
+            <form class="lifestyle-panel" id="lifestyle-form" autocomplete="off">
+              <div class="panel-heading"><span class="panel-index">A / INPUTS</span><h3>Your Daily Lifestyle</h3><p>Move a control or choose a different pattern.</p></div>
+              <div class="control-group"><div class="range-heading"><label for="electricity">Electricity</label><output id="electricity-output" for="electricity">5</output></div><div class="range-with-unit"><input id="electricity" name="electricity" type="range" min="0" max="30" step="0.5" value="5" /><span>kWh / day</span></div><div class="range-ends"><span>0 kWh</span><span>30 kWh</span></div></div>
+              <div class="control-group"><div class="range-heading"><label for="distance">Travel distance</label><output id="distance-output" for="distance">15</output></div><div class="range-with-unit"><input id="distance" name="distance" type="range" min="0" max="100" step="1" value="15" /><span>km / day</span></div><div class="range-ends"><span>0 km</span><span>100 km</span></div></div>
+              <div class="control-group control-group--select"><label for="travel-mode">Travel mode</label><select id="travel-mode" name="travelMode"><option>Walk / Cycle</option><option selected>Bus</option><option>Metro / Train</option><option>Two-wheeler</option><option>Petrol car</option><option>Diesel car</option><option>Flight-heavy</option></select></div>
+              <div class="control-group control-group--select"><label for="diet">Diet</label><select id="diet" name="diet"><option>Vegan</option><option>Vegetarian</option><option selected>Mixed</option><option>Non-vegetarian</option><option>Heavy meat</option></select></div>
+              <div class="control-group"><div class="range-heading"><label for="direct-water">Direct water use</label><output id="direct-water-output" for="direct-water">135</output></div><div class="range-with-unit"><input id="direct-water" name="directWater" type="range" min="20" max="400" step="5" value="135" /><span>L / day</span></div><div class="range-ends"><span>20 L</span><span>400 L</span></div></div>
+              <fieldset class="control-group shopping-choice"><legend>Shopping level</legend><div class="segmented-control"><label><input type="radio" name="shopping" value="Low" /><span>Low</span></label><label><input type="radio" name="shopping" value="Medium" checked /><span>Medium</span></label><label><input type="radio" name="shopping" value="High" /><span>High</span></label></div></fieldset>
+              <div class="preset-row"><button class="button button--small button--outline" id="reset-button" type="button">Reset</button><button class="button button--small button--outline" id="india-button" type="button">Load India average</button><button class="button button--small button--warning" id="high-button" type="button">Load high-consumption</button></div>
+            </form>
+
+            <div class="results-column">
+              <section class="results-panel" aria-labelledby="results-title">
+                <div class="panel-heading panel-heading--inline"><div><span class="panel-index">B / LIVE RESULTS</span><h3 id="results-title">Your daily estimate</h3></div><span class="live-dot"><i></i> Live</span></div>
+                <div class="metrics-row"><article class="metric-card metric-card--carbon"><span>CARBON · DAILY</span><strong id="carbon-daily">10.7</strong><small>kg CO₂e / day</small><div class="metric-secondary"><span>Annual</span><strong id="carbon-annual">3.91</strong><span>tons CO₂e / year</span></div></article><article class="metric-card metric-card--water"><span>WATER · DAILY</span><strong id="water-daily">4,385</strong><small>liters / day</small><div id="water-stack" class="water-stack" role="img" aria-label="Water footprint split into green, blue and grey water"></div><div id="water-legend" class="water-legend"></div></article><article class="metric-card metric-card--ecology"><span>ECOLOGICAL</span><strong id="ecology-total">2.46</strong><small>global hectares · gha</small></article></div>
+                <div class="chart-grid"><article class="mini-chart"><div class="mini-chart__heading"><h4>Carbon contributors</h4><span>kg CO₂e / day</span></div><div class="donut-wrap"><div id="contribution-donut" class="donut-host"></div><div id="contribution-legend" class="donut-legend"></div></div></article><article class="mini-chart"><div class="mini-chart__heading"><h4>You vs. reference</h4><span>gha / person</span></div><div id="personal-comparison-chart" class="chart-host"></div><p class="micro-note">Fixed reference values are approximate.</p></article></div>
+                <div class="result-actions"><button class="button button--small button--outline" id="copy-button" type="button">Copy my results</button><span id="copy-status" class="copy-status" role="status" aria-live="polite"></span></div>
+              </section>
+
+              <section id="verdict-card" class="verdict-card verdict-card--moderate" aria-live="polite" aria-atomic="true">
+                <div class="verdict-card__top"><span class="panel-index">INSIDE OR EXCEEDING EARTH'S BIOCAPACITY?</span><span id="verdict-badge" class="verdict-badge">MODERATE OVERSHOOT</span></div>
+                <h3 id="verdict-title">EXCEEDING BIOCAPACITY <span>(Moderate Overshoot)</span></h3>
+                <p id="verdict-description">Your lifestyle draws on more than one fair share.</p>
+                <div class="verdict-numbers"><div><span>Earths needed</span><strong id="earths-needed">1.64</strong></div><div><span>Ecological deficit</span><strong id="balance-result">0.96 gha</strong></div></div>
+                <div class="footprint-meter-wrap"><div id="footprint-meter" class="footprint-meter" role="meter" aria-label="Your ecological footprint compared with Earth's fair share" aria-valuemin="0" aria-valuemax="10" aria-valuenow="2.46"><span class="meter-track"></span><span class="meter-limit" aria-hidden="true"></span><span class="meter-pointer" aria-hidden="true"></span><span class="meter-limit-label">Earth's limit<br/>1.5 gha</span><span id="meter-pointer-label" class="meter-pointer-label">2.46 gha</span></div><div class="meter-scale"><span>0 gha</span><span>5</span><span>10 gha</span></div></div>
+                <p class="fair-share-sentence" id="fair-share-sentence">Your footprint is 2.46 gha. Earth's fair share is 1.5 gha. You are using 164% of your fair share.</p>
+              </section>
+            </div>
+          </div>
+          <details class="calculation-details"><summary><span>How it's calculated</span><span class="approx-chip">Approximate educational estimates</span></summary><div class="calculation-body"><p>These simplified coefficients help show how changing an input can change an estimate. They are not a full life-cycle assessment; actual footprints depend on location, supply chains, technology, and accounting choices.</p><div class="formula-columns"><div><h4>Carbon · kg CO₂e / day</h4><p>Electricity: kWh × 0.71. Travel: km × selected mode factor (walk/cycle 0; bus 0.09; metro/train 0.04; two-wheeler 0.05; petrol car 0.17; diesel car 0.19; flight-heavy 0.25). Add diet/day (vegan 1.5; vegetarian 2.0; mixed 3.3; non-veg 4.5; heavy meat 7.0) and consumption/day (low 1.0; medium 2.5; high 5.0).</p></div><div><h4>Water · liters / day</h4><p>Direct water equals the slider value (blue). Diet/day (vegan 2,000; vegetarian 2,500; mixed 3,500; non-veg 4,500; heavy meat 6,000 L) is split 70% green, 15% blue and 15% grey. Shopping/day: low 300, medium 800, high 1,800 L (illustrative split). Electricity adds kWh × 2 L (blue).</p></div><div><h4>Ecological · global hectares</h4><p>Carbon part = (kg CO₂e/year ÷ 1,000) × 0.33. Food part: vegan 0.4, vegetarian 0.6, mixed 0.9, non-veg 1.3, heavy meat 1.9 gha. Built-up/consumption: low 0.1, medium 0.25, high 0.6 gha. Water part = (liters/day ÷ 10,000) × 0.05.</p></div></div></div></details>
+          <div class="simulator-footnote"><span>All inputs and results stay in this browser.</span><span>Comparison values are approximate reference points.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--chemistry-live" id="live-chemistry" aria-labelledby="live-chemistry-title">
+      <div class="section-wrap chapter-grid">
+        <div class="chapter-rail"><span class="chapter-number">↳</span><span class="chapter-rule"></span><span class="chapter-rail-label">CONNECTED CYCLES</span></div>
+        <div class="chapter-main">
+          <div class="live-chemistry-panel"><div class="live-chemistry-heading"><div><p class="eyebrow">Your choices · planetary pathways</p><h2 id="live-chemistry-title">The live <em>chemistry box.</em></h2></div><p class="chapter-lede">Equations appear as estimates cross a threshold. These are learning cues—not direct measurements of environmental damage.</p></div><div id="live-chemistry-list" class="live-chemistry-list" aria-live="polite"></div><div class="load-monitor"><div class="load-monitor__heading"><h3>Cycle overload indicator</h3><span class="micro-note">Simplified, educational status</span></div><div id="cycle-loads" class="cycle-loads" aria-live="polite"></div></div><div class="live-ph"><div class="live-ph__title"><span>Ocean pH direction</span><span class="micro-note">Illustrative pathway</span></div><div class="ph-scale"><div class="ph-scale__labels"><span>More acidic</span><span>More alkaline</span></div><div class="ph-scale__track"><span id="live-ph-marker"></span></div><div class="ph-scale__ends"><span>lower pH</span><span>higher pH</span></div></div><p id="live-ph-caption" class="micro-note">A chemistry pathway, not a direct ocean forecast</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--reduce" id="reduce" aria-labelledby="reduce-title">
+      <div class="section-wrap chapter-grid">
+        <div class="chapter-rail"><span class="chapter-number">05</span><span class="chapter-rule"></span><span class="chapter-rail-label">SMALL LEVERS</span></div>
+        <div class="chapter-main">
+          <div class="chapter-heading"><div><p class="eyebrow">A practical next step</p><h2 id="reduce-title">Reduce my <em>footprint.</em></h2></div><p class="chapter-lede">Begin with the part of this simplified estimate that contributes most. Try a change, then compare the model—not your worth.</p></div>
+          <div class="recommendation-layout"><div class="recommendation-intro"><span class="recommendation-mark" aria-hidden="true">↘</span><h3>One lever at a time.</h3><p>These suggestions are tailored to your largest modeled contributors. Savings are approximate and shown relative to the current settings.</p></div><div id="suggestion-list" class="suggestion-list" aria-live="polite"></div></div>
+          <div id="scenario-panel" class="scenario-panel" hidden aria-live="polite"><div class="scenario-panel__heading"><div><span class="eyebrow">A small change, a different balance</span><h3>What if I do this?</h3></div><button id="scenario-close" class="icon-button" type="button" aria-label="Close what-if comparison">×</button></div><div id="scenario-comparison" class="scenario-comparison"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--ai" id="ai" aria-labelledby="ai-title">
+      <div class="section-wrap chapter-grid">
+        <div class="chapter-rail"><span class="chapter-number">06</span><span class="chapter-rule"></span><span class="chapter-rail-label">A NEW TOOL</span></div>
+        <div class="chapter-main ai-panel"><div><p class="eyebrow">The AI connection</p><h2 id="ai-title">A tool with a <em>footprint, too.</em></h2><p>Training and running AI models uses computing infrastructure, which draws electricity and requires equipment and cooling. The footprint depends on the model, hardware, grid and how the service is used—so there is no single universal cost per question.</p><p>AI can also help map forests from satellites, balance smart grids and improve climate modelling. Its value depends on where it is used, what energy powers it, and whether the benefits justify the material and energy costs.</p></div><div class="ai-notes"><div><span class="ai-note-index">COSTS</span><strong>Compute · electricity · water · hardware</strong><p>Impacts vary by data centre, energy mix, cooling method and model scale.</p></div><div><span class="ai-note-index">USES</span><strong>Forests · grids · climate models</strong><p>Applications can support observation and planning, alongside human expertise.</p></div><div class="ai-balance-mark" aria-hidden="true"><span></span><i></i><b></b></div></div></div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--quiz" id="quiz" aria-labelledby="quiz-title">
+      <div class="section-wrap chapter-grid">
+        <div class="chapter-rail"><span class="chapter-number">07</span><span class="chapter-rule"></span><span class="chapter-rail-label">TEST YOURSELF</span></div>
+        <div class="chapter-main">
+          <div class="chapter-heading"><div><p class="eyebrow">Six short field questions</p><h2 id="quiz-title">Connect the <em>cycles.</em></h2></div><p class="chapter-lede">Choose an answer for instant feedback. A wrong turn is another chance to see the process.</p></div>
+          <div class="quiz-shell"><div class="quiz-meta"><span id="quiz-progress">Question 1 of 6</span><span id="quiz-score">0 correct so far</span></div><div id="quiz-content" aria-live="polite"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--conclusion" id="conclusion" aria-labelledby="conclusion-title">
+      <div class="section-wrap chapter-grid">
+        <div class="chapter-rail"><span class="chapter-number">08</span><span class="chapter-rule"></span><span class="chapter-rail-label">THE TAKEAWAY</span></div>
+        <div class="chapter-main">
+          <div class="conclusion-heading"><p class="eyebrow">Keep the account in view</p><h2 id="conclusion-title">A fair share is a <em>place to begin.</em></h2></div>
+          <div class="takeaway-list"><article><span>01</span><p>Nature has a limit.</p></article><article><span>02</span><p>Our footprints push chemical cycles out of balance.</p></article><article><span>03</span><p>Measuring and small lifestyle changes can bring us back within limits.</p></article></div>
+          <div class="references"><span class="eyebrow">Continue the reading</span><div class="reference-links"><a href="https://www.footprintnetwork.org/" target="_blank" rel="noopener noreferrer">Global Footprint Network <span aria-hidden="true">↗</span></a><a href="https://www.ipcc.ch/" target="_blank" rel="noopener noreferrer">IPCC <span aria-hidden="true">↗</span></a><a href="https://www.waterfootprint.org/" target="_blank" rel="noopener noreferrer">Water Footprint Network <span aria-hidden="true">↗</span></a><a href="https://www.fao.org/" target="_blank" rel="noopener noreferrer">FAO <span aria-hidden="true">↗</span></a><a href="https://ourworldindata.org/" target="_blank" rel="noopener noreferrer">Our World in Data <span aria-hidden="true">↗</span></a><a href="https://cea.nic.in/" target="_blank" rel="noopener noreferrer">Central Electricity Authority (India) <span aria-hidden="true">↗</span></a></div><p class="micro-note">Use each source's latest methods and local context when doing formal research.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14"/><path d="M5 20h30M20 5c5 5 7 10 7 15s-2 10-7 15M20 5c-5 5-7 10-7 15s2 10 7 15"/><path d="M6 25h12m4-10h12"/></svg></span><span class="brand-name">Earth’s <em>account</em></span></a><p>All values are approximate and for educational purposes.</p><a class="back-top" href="#top">Back to the beginning ↑</a></div></footer>
+</body>
+</html>
